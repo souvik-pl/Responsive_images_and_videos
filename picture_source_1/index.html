@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture Element Demo</title>
+  </head>
+  <body>
+    <div>
+      <p>This image changes art direction based on screen size:</p>
+      <picture>
+        <source
+          srcset="https://picsum.photos/id/10/800/400"
+          media="(min-width: 800px)"
+          alt="Landscape orientation for desktop"
+        />
+        <source
+          srcset="https://picsum.photos/id/10/400/600"
+          media="(min-width: 400px)"
+          alt="Portrait orientation for tablet"
+        />
+        <img
+          src="https://picsum.photos/id/10/300/300"
+          alt="Square format for mobile"
+          class="responsive-img"
+        />
+      </picture>
+    </div>
+  </body>
+</html>
