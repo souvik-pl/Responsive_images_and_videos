@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture Element Demo</title>
+  </head>
+  <body>
+    <div>
+      <p>Modern formats with fallback support:</p>
+      <picture>
+        <!--Here we have taken a different images (id = 10, 11, 12). So that it is easier to know which image is loaded-->
+        <source
+          srcset="https://picsum.photos/id/10/600/400.webp"
+          type="image/webp"
+        />
+        <source
+          srcset="https://picsum.photos/id/11/600/400.jpg"
+          type="image/jpeg"
+        />
+        <img
+          src="https://picsum.photos/id/12/600/400.jpg"
+          alt="Fallback image"
+        />
+      </picture>
+    </div>
+  </body>
+</html>
